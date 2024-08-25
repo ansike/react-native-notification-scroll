@@ -22,6 +22,8 @@ type RNNotificationBarProps = {
   width?: number;
   /* notification height */
   height?: number;
+  /* inherit */
+  style?: StyleProp<ViewStyle>;
   /* notification text style */
   _textStyle?: StyleProp<TextStyle>;
   /* notification background style */
@@ -38,6 +40,7 @@ const RNNotificationBar = ({
   width = pxToDp(678),
   height = pxToDp(64),
   horn,
+  style,
   _backStyle,
   _textStyle,
 }: RNNotificationBarProps) => {
@@ -101,7 +104,7 @@ const RNNotificationBar = ({
   };
 
   return (
-    <View style={[styles.box, { width, height }]}>
+    <View style={[styles.box, style, { width, height }]}>
       <View style={[styles.backgroud, { width, height }, _backStyle]} />
       {horn ? (
         horn
