@@ -1,7 +1,7 @@
 {
   "name": "react-native-notification-scroll",
   "version": "0.1.0",
-  "description": "a",
+  "description": "A React Native component that can scroll the notification bar",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -51,14 +51,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://ansike.github.io/.git"
+    "url": "https://github.com/ansike/react-native-notification-scroll"
   },
   "author": "ansike <ansike@qq.com> (https://ansike.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://ansike.github.io//issues"
+    "url": "https://github.com/ansike/react-native-notification-scroll/issues"
   },
-  "homepage": "https://ansike.github.io/#readme",
+  "homepage": "https://github.com/ansike/react-native-notification-scroll",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
