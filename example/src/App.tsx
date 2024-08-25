@@ -1,17 +1,12 @@
-import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-notification-scroll';
+import { StyleSheet, View } from 'react-native';
+import { RNNotificationBar } from 'react-native-notification-scroll';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
-
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <RNNotificationBar
+        notices={['1 asdgajsdhjkahsjkxxxxxxx', '2 zzskdjalksjdlka asdkajks']}
+      />
     </View>
   );
 }
