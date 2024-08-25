@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { RNNotificationBar } from 'react-native-notification-scroll';
 
@@ -5,7 +6,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <RNNotificationBar
-        notices={['1 asdgajsdhjkahsjkxxxxxxx', '2 zzskdjalksjdlka asdkajks']}
+        notices={[
+          '1 asdgajsdhjkahsjdhjkahsjdhjkahsjkxxxxxxx',
+          '2 zzskdhjkahsjdhjkahsjdjalksjdlka asdkajks',
+        ]}
       />
     </View>
   );

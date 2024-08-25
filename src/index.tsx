@@ -14,17 +14,23 @@ import {
 import { pxToDp, sleep } from './utls';
 
 type RNNotificationBarProps = {
+  /* notification array */
   notices: string[];
+  /* horn icon */
   horn?: React.ReactNode;
+  /* notification width */
   width?: number;
+  /* notification height */
   height?: number;
+  /* notification text style */
   _textStyle?: StyleProp<TextStyle>;
+  /* notification background style */
   _backStyle?: StyleProp<ViewStyle>;
 };
 
-// 消息之间间隔
+// the segment between two notifications
 const MarginRight = 20;
-// 消息滑动速度
+// the slide speed of the notification
 const Speed = 20;
 
 const RNNotificationBar = ({
@@ -96,7 +102,7 @@ const RNNotificationBar = ({
 
   return (
     <View style={[styles.box, { width, height }]}>
-      <View style={[styles.backImg, { width, height }, _backStyle]} />
+      <View style={[styles.backgroud, { width, height }, _backStyle]} />
       {horn ? (
         horn
       ) : (
@@ -143,7 +149,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     position: 'relative',
   },
-  backImg: {
+  backgroud: {
     position: 'absolute',
     left: 0,
     right: 0,
