@@ -6,6 +6,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <RNNotificationBar
+        style={{
+          backgroundColor: 'red',
+          marginTop: 100,
+        }}
         notices={[
           '1 asdgajsdhjkahsjdhjkahsjdhjkahsjkxxxxxxx',
           '2 zzskdhjkahsjdhjkahsjdjalksjdlka asdkajks',
