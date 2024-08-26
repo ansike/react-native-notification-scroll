@@ -135,7 +135,9 @@ const RNNotificationBar = ({
             })}
           </Animated.View>
         ) : (
-          <Text style={[styles.text]}>No notifications at the moment</Text>
+          <Text style={[styles.text, _textStyle]}>
+            No notifications at the moment
+          </Text>
         )}
       </View>
     </View>
