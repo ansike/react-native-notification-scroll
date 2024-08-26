@@ -7,7 +7,6 @@ export default function App() {
     <View style={styles.container}>
       <RNNotificationBar
         style={{
-          backgroundColor: 'red',
           marginTop: 100,
         }}
         notices={[

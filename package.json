@@ -1,6 +1,6 @@
 {
   "name": "react-native-notification-scroll",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A React Native component that can scroll the notification bar",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
